@@ -4,6 +4,7 @@
     min-height: 436px
     outline: 1px solid pink
     font-family: Montserrat
+    margin: 0 auto
 
 .copyRight
     display: grid
@@ -24,15 +25,29 @@
     display: grid
     grid-template-columns: auto auto
     color: white
+    justify-content: space-between
 .logoSectionLogo
     background-image: url(/images/logo.png)
     background-repeat: no-repeat
+    height: 110px
+    width: 110px
 .logoSectionLinks
+    width: 490px
     outline: 1px solid green
     position: relative
     left: -15px
     display: grid
-    grid-auto-columns: auto auto auto
+    grid-template-columns: auto auto auto
+    justify-content: space-between
+
+    
     & li
         list-style-type: none
         padding: 5px 0
+        & a 
+            color: white
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+.footerHeaders
+    font-size: 1.1rem

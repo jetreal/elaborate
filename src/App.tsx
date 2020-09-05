@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.sass';
-import MainPage from './pages/mainPage/MainPage';
+import { Provider } from 'react-redux';
+import store from './store/Store';
+import MainPageContainer from './pages/mainPage/mainPageContainer';
 
 
-function App () {
+function App() {
   return (
-    <div className="App">
-      <MainPage />
-      
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <MainPageContainer />
+      </div>
+    </Provider>
   );
 }
 
