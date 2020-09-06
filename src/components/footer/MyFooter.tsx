@@ -4,9 +4,7 @@ import FooterLink from './footerLinks/FooterLink'
 
 
 const MyFooter: React.FC<any> = (props: any) => {
-    console.log(props)
-
-
+    
     return (
         <footer className={styles.footer}>
             <div className={styles.logoSection}>

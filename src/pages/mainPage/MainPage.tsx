@@ -4,6 +4,10 @@ import LogginButton from '../../components/logginButton/LogginButton'
 import SearchSection from '../../components/mainPageSearchSection/SearchSection'
 import MyFooter from '../../components/footer/MyFooter'
 import Navbar from '../../components/navbar/Navbar'
+import JustGetSection from '../../components/justGetSection/JustGetSection'
+
+
+
 
 
 interface Links {
@@ -30,11 +34,13 @@ const MainPage: React.FC<Props> = (props) => {
             <LogginButton />
             <Navbar />
             <SearchSection />
+            <JustGetSection />
+            
             <MyFooter
-             linksLeft={props.MainPageReducer.footerLinksLeft} 
-             linksCenter={props.MainPageReducer.footerLinksCenter} 
-             linksRight={props.MainPageReducer.footerLinksRight} 
-             />
+                linksLeft={props.MainPageReducer.footerLinksLeft}
+                linksCenter={props.MainPageReducer.footerLinksCenter}
+                linksRight={props.MainPageReducer.footerLinksRight}
+            />
         </div >
     )
 }

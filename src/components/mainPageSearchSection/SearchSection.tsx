@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './searchSection.module.sass'
+import SearchForm from './searchForm/SearchForm'
 
 
 const SearchSection: React.FC = (props) => {
@@ -35,6 +36,15 @@ const SearchSection: React.FC = (props) => {
         <p className={styles.searchSectionSecondText}>
           Freelancing platform for business,<br />startups and investors
         </p>
+
+        <SearchForm />
+        <div className={styles.applyAsFreelancerDiv}>
+          <h3 className={styles.applyAsFreelancerText}>
+            Apply as freelancer
+          </h3>
+
+        </div>
+
       </section>
     </>
   )
