@@ -6,10 +6,6 @@ import MyFooter from '../../components/footer/MyFooter'
 import Navbar from '../../components/navbar/Navbar'
 import JustGetSection from '../../components/justGetSection/JustGetSection'
 
-
-
-
-
 interface Links {
     name: string
     url: string
@@ -35,7 +31,6 @@ const MainPage: React.FC<Props> = (props) => {
             <Navbar />
             <SearchSection />
             <JustGetSection />
-            
             <MyFooter
                 linksLeft={props.MainPageReducer.footerLinksLeft}
                 linksCenter={props.MainPageReducer.footerLinksCenter}
